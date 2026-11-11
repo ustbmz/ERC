@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ERC / EIP 标准学习系统 · 从代币到智能体经济</title>
+<meta name="description" content="按 DEX、借贷、NFT、钱包、AI+Web3 五大场景系统学习 ERC/EIP 标准：定义、核心接口、代码示例、常见坑与面试考点。" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark">EIP</div>
+    <div>
+      ERC / EIP 学习系统
+      <small>Standards for the Open Economy</small>
+    </div>
+  </div>
+
+  <div class="topbar-search">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+    <input id="searchInput" type="search" placeholder="搜索标准，如 4626、版税、账户抽象…" autocomplete="off" />
+  </div>
+
+  <div class="topbar-progress">
+    <span id="topbarPct">0%</span>
+    <div class="pbar"><i id="topbarBar"></i></div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="side-group">
+      <div class="side-title">学习</div>
+      <a class="side-link" href="#/overview" data-nav="overview"><span class="dot"></span>学习路径</a>
+      <a class="side-link" href="#/cheatsheet" data-nav="cheatsheet"><span class="dot"></span>标准速查表<span class="num" id="sideCount">14</span></a>
+    </div>
+
+    <div class="side-group">
+      <div class="side-title">五大场景</div>
+      <div id="sideScenes"></div>
+    </div>
+
+    <div class="side-group">
+      <div class="side-title">巩固</div>
+      <a class="side-link" href="#/quiz" data-nav="quiz"><span class="dot"></span>自测 15 题</a>
+      <a class="side-link" href="#/docs" data-nav="docs"><span class="dot"></span>Markdown 文档</a>
+    </div>
+
+    <div class="side-group">
+      <div class="side-title">官方来源</div>
+      <a class="side-link" href="https://eips.ethereum.org/all" target="_blank" rel="noopener">EIP 全量列表 ↗</a>
+      <a class="side-link" href="https://github.com/ethereum/ERCs" target="_blank" rel="noopener">ethereum/ERCs ↗</a>
+      <a class="side-link" href="https://github.com/ethereum/EIPs" target="_blank" rel="noopener">ethereum/EIPs ↗</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="wrap" id="view"></div>
+    <div class="wrap">
+      <div class="footer">
+        <span>内容依据 EIP 官方文本与各标准生态实践整理</span>
+        <span>·</span>
+        <span>较新标准（ERC-8004 / ERC-8183 / x402）仍在演进，实现前请核对官方仓库最新版本</span>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
